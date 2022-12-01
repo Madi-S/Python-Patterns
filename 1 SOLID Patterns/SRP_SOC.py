@@ -1,5 +1,6 @@
 # SRP - Single Responsibility Principle
 # Every class or function should be defined to execute a single action
+# Every class should have 1 reason to be modified
 
 
 class Journal:

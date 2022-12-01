@@ -1,4 +1,5 @@
 # LSP - Liskov Substitution Principle
+# This principle states that classes should be able to replace subclasses, not behave abnormally
 
 
 class Rectangle:

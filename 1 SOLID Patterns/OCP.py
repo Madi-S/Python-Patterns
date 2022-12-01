@@ -1,4 +1,5 @@
 # OCP - Open Closed Principle
+# Classes should be open for extension (adding some new methods), but closed for modification (changing existing methods)
 
 
 from enum import Enum

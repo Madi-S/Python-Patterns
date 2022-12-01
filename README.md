@@ -1,2 +1,2 @@
 # Python-Patterns
-Examples of Architerctural Patterns of Programming on Python
+Examples of Architerctural Design Patterns of Programming on Python

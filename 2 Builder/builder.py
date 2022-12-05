@@ -68,10 +68,11 @@ class PersonAdressuilder(PersonBuilder):
         return self
 
 
-pb = PersonBuilder()
-person = pb\
-    .lives.at_street('High Road 32').in_city('Dublin').with_postcode('023312')\
-    .works.at_company('Google').as_a('Designer').with_income(140_000)\
-    .build()
+if __name__ == '__main__':
+    pb = PersonBuilder()
+    person = pb\
+        .lives.at_street('High Road 32').in_city('Dublin').with_postcode('023312')\
+        .works.at_company('Google').as_a('Designer').with_income(140_000)\
+        .build()
 
-print(person)
+    print(person)

@@ -38,6 +38,7 @@ class PersonBirthDateBuilder(PersonJobBuilder):
         return self
 
 
-pb = PersonBirthDateBuilder()
-person = pb.born_at('1/1/1979').works_as('engineer').called('Mike').build()
-print(person)
+if __name__ == '__main__':
+    pb = PersonBirthDateBuilder()
+    person = pb.born_at('1/1/1979').works_as('engineer').called('Mike').build()
+    print(person)

@@ -65,10 +65,11 @@ class HtmlBuilder:
         return str(self.__root)
 
 
-# builder = HtmlBuilder('ul')
-# builder.add_child('li', 'hello')
-# builder.add_child('li', 'world')
+if __name__ == '__main__':
+    # builder = HtmlBuilder('ul')
+    # builder.add_child('li', 'hello')
+    # builder.add_child('li', 'world')
 
-bulder = HtmlBuilder.create('ul')
-bulder.add_child_fluent('li', 'hello').add_child_fluent('li', 'world')
-print(bulder)
+    bulder = HtmlBuilder.create('ul')
+    bulder.add_child_fluent('li', 'hello').add_child_fluent('li', 'world')
+    print(bulder)

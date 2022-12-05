@@ -69,5 +69,5 @@ class HtmlBuilder:
 # builder.add_child('li', 'world')
 
 bulder = HtmlBuilder.create('ul')
-builder.add_child_fluent('li', 'hello').add_child_fluent('li', 'world')
-print(builder)
+bulder.add_child_fluent('li', 'hello').add_child_fluent('li', 'world')
+print(bulder)

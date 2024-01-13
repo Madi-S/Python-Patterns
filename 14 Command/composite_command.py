@@ -27,7 +27,7 @@ class MoneyTransferCommand(CompositeBankAccountCommand):
                 to_account, BankAccountCommand.Action.DEPOSIT, amount
             )
         ])
-    
+
     def invoke(self):
         ok = True
         for cmd in self:
@@ -37,6 +37,7 @@ class MoneyTransferCommand(CompositeBankAccountCommand):
             else:
                 cmd.success = False
         self.success = ok
+
 
 class TestSuite(unittest.TestCase):
     def test_composite_deposite(self):
@@ -52,11 +53,11 @@ class TestSuite(unittest.TestCase):
         print(f'After invoke {ba}')
         composite.undo()
         print(f'After undo {ba}')
-    
+
     def test_transfter_fail(self):
         ba1 = BankAccount(100)
         ba2 = BankAccount()
-        
+
         amount = 1000
         wc = BankAccountCommand(
             ba1, BankAccountCommand.Action.WITHDRAW, amount
@@ -64,24 +65,25 @@ class TestSuite(unittest.TestCase):
         dc = BankAccountCommand(
             ba2, BankAccountCommand.Action.DEPOSIT, amount
         )
-        
+
         transfer_composite = CompositeBankAccountCommand([wc, dc])
         transfer_composite.invoke()
         print(f'ba1: {ba1}, ba2: {ba2}')
         transfer_composite.undo()
         print(f'ba1: {ba1}, ba2: {ba2}')
-    
+
     def test_transfer_success(self):
         ba1 = BankAccount(100)
         ba2 = BankAccount()
-        
-        amount = 100 # works for 1000 as well
+
+        amount = 100  # works for 1000 as well
         transfer = MoneyTransferCommand(ba1, ba2, amount)
         transfer.invoke()
         print(f'ba1: {ba1}, ba2: {ba2}')
         transfer.undo()
         print(f'ba1: {ba1}, ba2: {ba2}')
         print(f'Transfer success: {transfer.success}')
-    
+
+
 if __name__ == '__main__':
     unittest.main()

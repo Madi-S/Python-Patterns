@@ -52,7 +52,6 @@ if __name__ == '__main__':
     print(f'Undo #1: {ba}')
     ba.undo()
     print(f'Undo #2: {ba}')
-    
     ba.redo()
     print(f'Redo #1: {ba}')
     ba.redo()

@@ -14,7 +14,8 @@ class Person:
 
     def __str__(self):
         return f'Address {self.street_address} {self.postcode} {self.city}\n' + \
-            f'Employment {self.company_name} {self.position} {self.annual_income}'
+            f'Employment {self.company_name} {
+                self.position} {self.annual_income}'
 
 
 class PersonBuilder:

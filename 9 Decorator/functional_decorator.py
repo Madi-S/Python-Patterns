@@ -3,7 +3,6 @@
 # It allows to interact with low-level structures
 # Decorator is a class that refers to the object you want decorate
 # This is an mistake.
-
 import time
 
 

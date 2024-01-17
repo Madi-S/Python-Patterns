@@ -3,8 +3,6 @@
 
 # Example:
 # circle & square implementation using vector & raster methods
-
-
 from abc import ABC
 
 

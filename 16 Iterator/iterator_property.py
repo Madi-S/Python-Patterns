@@ -44,7 +44,7 @@ class Creature:
     @property
     def max_stat(self):
         return max(self.stats)
-    
+
     @property
     def min_stat(self):
         return min(self.stats)

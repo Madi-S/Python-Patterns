@@ -1,6 +1,5 @@
 # HTML elements compilation example
 
-
 # Bad approach
 # text = 'abcd'
 # parts = ['<p>', text, '</p>']

@@ -1,7 +1,5 @@
 # DIP - Dependency Inversion Principle
 # High-level modules should not be dependent on the implementation of low-level modules, like data-types
-
-
 from abc import abstractmethod
 from enum import Enum
 

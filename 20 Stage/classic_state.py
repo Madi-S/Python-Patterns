@@ -1,5 +1,5 @@
 # Very complexed and non-practical approach
-# But still it is a classic approach of state using OOP 
+# But still it is a classic approach of state using OOP
 from abc import ABC
 
 

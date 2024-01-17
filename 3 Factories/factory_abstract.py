@@ -1,5 +1,3 @@
-
-
 from abc import ABC
 from enum import Enum, auto
 

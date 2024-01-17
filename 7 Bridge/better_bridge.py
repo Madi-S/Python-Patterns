@@ -1,6 +1,4 @@
 # Bridge use example withouth breaking SOLID principles
-
-
 from abc import ABC
 
 

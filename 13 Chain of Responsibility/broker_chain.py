@@ -1,7 +1,5 @@
 # event broker
 # cqs
-
-
 from abc import ABC
 from enum import Enum
 

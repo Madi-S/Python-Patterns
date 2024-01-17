@@ -3,8 +3,6 @@
 # The idea is following - break smaller interfaces/classes into smaller ones, because we can define methods in a class, which are not necessary, but yet they will be defined in API
 # Of course, we can add comments or raise exceptions in unimplemented methods, but still they are defined in API for this particular class
 # YAGNI - You aint gonna need it
-
-
 from abc import abstractmethod
 
 

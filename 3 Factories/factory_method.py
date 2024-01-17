@@ -2,8 +2,6 @@
 # It allows us to initialize object in different ways as we wish
 # This example demonstrates initialization of Point objects using (x, y) or (rho, theta) parameters
 # Overall, factory methods just create new instances of the same class but with different parameters, etc
-
-
 from enum import Enum
 from math import sin, cos
 
